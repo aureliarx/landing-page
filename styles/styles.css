@@ -84,10 +84,16 @@ main {
 /*********************************** FOOTER ***********************************/
 footer {
     background-color: rgb(37, 66, 85);
-    height: 75px;
+    height: 80px;
+}
+
+footer span {
+    padding-top: 30px;
 }
 
 span {
     color: white;
+    display: flex;
+    flex-direction: row;
 }
     
