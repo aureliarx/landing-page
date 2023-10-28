@@ -3,21 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="preload" as="image" href="assets/bg.png">
+    <link rel="stylesheet" href="styles/style.css">
     <title>Landing Page</title>
 </head>
 <body>
     <header>
         <div class="container">
-            <div class="logo">
-                <a href="#"><img src="assets/logo-2.png" alt="logo"></a>
+            <div class="nav-logo">
+                <a href="#"><img class="logo" src="assets/logo-2.png" alt="logo"></a>
             </div>
-            <div class="header-right">
+            <div class="nav-menu">
                 <nav>
                     <ul>
                         <li><a class="btn" href="">About</a></li>
                         <li><a class="btn" href="">Features</a></li>
-                        <li><a class="btn" href="">Contact</a></li>
+                        <!-- <li><a class="btn" href="">Contact</a></li> -->
                         <li><a class="btn btn-signup" href="">Sign Up</a></li>
                     </ul>
                 </nav>
@@ -28,36 +29,69 @@
             </div>
         </div>
     </header>
-    <!-- <section class="main">
+    <main class="main">
         <div class="main-heading">
+            <div class="main-bg">
+                <img class="bg" src="assets/bg.png">
+            </div>
             <div class="container">
-                <h1>Hello!</h1>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id corrupti cum maiores ipsum modi, voluptas cupiditate facere tempore impedit explicabo.</p>
+                <div class="main-contain">
+                    <h1>Hello!</h1>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id corrupti cum maiores ipsum modi, voluptas cupiditate facere tempore impedit explicabo.</p>
+                </div>
             </div>
         </div>
-        <div class="main-aboout">
+        <div class="main-about">
             <div class="container">
                 <h2>This is for About Layout</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, ex at eaque dignissimos nemo veritatis similique aspernatur odit inventore, asperiores rem nulla vel sequi delectus deserunt fugit vitae. Velit, animi!</p>
             </div>
         </div>
-        <div class="main-contact">
+        <div class="main-features">
             <div class="container">
-                <h2>This is for Contact Layout</h2>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet, soluta numquam! Error magni repellat quasi autem nihil dolore deserunt iste?</p>
+                <h2>Features</h2>
+                <div class="features-wrapper">
+                    <div class="features-contain features-contain-1">
+                        <img src="assets/assets-1.png">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid quaerat, nostrum autem impedit vitae doloremque. Doloremque, magnam!</p>
+                    </div>
+                    <div class="features-contain features-contain-2">
+                        <img src="assets/assets-2.png">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate deserunt nam aspernatur itaque soluta voluptates molestias ad!</p>
+                    </div>
+                    <div class="features-contain features-contain-3">
+                        <img src="assets/assets-3.png">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat eos illo nemo, eaque ratione deleniti maxime fugit.</p>
+                    </div>
+                    <div class="features-contain features-contain-4">
+                        <img src="assets/assets-4.png">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque id laudantium beatae voluptatum a commodi obcaecati totam.</p>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="main-login">
+        <div class="main-signup">
             <div class="container">
-                <p>login? yes / no</p>
+                <img src="assets/assets-5.png">
+                <div class="signup-wrapper">
+                    <h2>Ready to Join?</h2>
+                    <p>Sign Up and Subscribe our newspaper for future updates</p>
+                    <div class="signup-form">
+                        <p>Email :</p>
+                        <input type="email">
+                        <input class="btn-form submit-form" type="submit" value="Sign Up">
+                    </div>
+                </div>
             </div>
         </div>
-    </section>
+    </main>
     <footer>
-        <div class="footer-logo">
-            <a href="#"><img src="assets/logo-1.png" alt="logo"></a>
+        <div class="container">
+            <div class="footer-logo">
+                <a href="#"><img class="logo" src="assets/logo-1.png" alt="logo"></a>
+            </div>
+            <span class="copyright">Copyright &#169; aureliarx</span>
         </div>
-        <span class="copyright">Copyright &#169; aureliarx</span>
-    </footer> -->
+    </footer>
 </body>
 </html>
