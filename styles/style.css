@@ -14,9 +14,26 @@ a {
 }
 
 .container {
+    max-width: 1200px;
     width: 100%;
     padding: 0;
     margin: 0 auto;
+}
+
+h1 {
+    font-size: 48px;
+}
+
+h2 {
+    font-size: 32px;
+}
+
+h3 {
+    font-size: 26px;
+}
+
+p {
+    font-size: 18px;
 }
 
 /* Header */
@@ -141,13 +158,10 @@ main {
     background-color: whitesmoke;
 }
 
-main .container {
-    max-width: 1200px;
-}
-
 .main-about .container,
 .main-signup .container,
 .features-wrapper,
+.features-cards,
 footer .container {
     display: flex;
 }
@@ -161,27 +175,21 @@ footer .container {
 .main-bg {
     margin: 50px;
     float: right;
+    position: relative;
 }
 
 .bg {
     width: 45vmax;
 }
 
-.main-contain {
+.main-content {
     margin-top: 110px;
     width: 45%;
     float: left;
+    position: absolute;
 }
 
-h1 {
-    font-size: 48px;
-}
-
-p {
-    font-size: 18px;
-}
-
-.main-contain p {
+.main-content p {
     text-align: justify;
     color: rgb(95, 95, 95);
 }
@@ -197,8 +205,9 @@ p {
     align-items: center;
 }
 
-.main-about .container p {
+.main-about p {
     margin-top: 20px;
+    text-align: center;
 }
 
 /* Main: Features */
@@ -207,28 +216,50 @@ p {
     padding: 50px 0;
 }
 
+.main-features h2 {
+    text-align: center;
+}
+
 .features-wrapper {
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: stretch;
 }
 
-.features-contain {
+.features-cards {
     background-color: rgb(122, 193, 196);
-    padding: 30px;
-    width: 245px;
-    border-radius: 15px;
+    padding: 10px;
+    width: 250px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    flex-direction: column;
+    align-items: center;
 }
 
-h2, p {
-    text-align: center;
-}
-
-.features-contain img {
-    display: block;
-    margin: 0 auto;
+.cards-img {
     width: 150px;
+    height: 150px;
+    position: relative;
 }
+
+.cards-img img {
+    width: 100%;
+    height: auto;
+}
+
+.cards-content {
+    padding: 10px;
+}
+
+.cards-content h3, .cards-content p {
+    text-align: justify;
+}
+
+.cards-content p {
+    font-size: 16px;
+}
+
 
 /* Main: Sign-Up */
 .main-signup {
@@ -252,7 +283,8 @@ h2, p {
 
 .signup-wrapper h2,
 .signup-wrapper p {
-    padding-top: 10px;
+    text-align: center;
+    padding-top: 5px;
 }
 
 .signup-form {
