@@ -118,6 +118,12 @@ nav ul li a {
     transition: 0.3s;
 }
 
+.btn-signup:active {
+    position: relative;
+    top: 2px;
+    box-shadow: none;
+}
+
 .toggle {
     display: none;
     height: 20px;
@@ -256,7 +262,12 @@ footer .container {
     text-align: justify;
 }
 
+.cards-content h3 {
+    margin: 25px 0 10px 0;
+}
+
 .cards-content p {
+    margin-top: 0;
     font-size: 16px;
 }
 
@@ -315,6 +326,7 @@ input {
 
 .submit-form:hover {
     opacity: 1;
+    transition: 0.3s;
 }
 
 .btn-form {
